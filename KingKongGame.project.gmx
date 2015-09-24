@@ -9,6 +9,8 @@
     <sprite>sprites\TowerSprite</sprite>
     <sprite>sprites\SubTowerSprite</sprite>
     <sprite>sprites\EnemySprite</sprite>
+    <sprite>sprites\RangeMonkeySprite</sprite>
+    <sprite>sprites\BananaSprite</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -16,6 +18,8 @@
     <object>objects\Tower</object>
     <object>objects\SubTower</object>
     <object>objects\Enemy</object>
+    <object>objects\RangeMonkey</object>
+    <object>objects\ThrownBanana</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
