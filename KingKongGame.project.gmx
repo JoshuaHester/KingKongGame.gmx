@@ -7,11 +7,15 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\TowerSprite</sprite>
+    <sprite>sprites\SubTowerSprite</sprite>
+    <sprite>sprites\EnemySprite</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\Tower</object>
+    <object>objects\SubTower</object>
+    <object>objects\Enemy</object>
   </objects>
   <help>
     <rtf>help.rtf</rtf>
