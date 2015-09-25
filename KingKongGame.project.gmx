@@ -21,9 +21,10 @@
     <object>objects\RangeMonkey</object>
     <object>objects\ThrownBanana</object>
     <object>objects\EnenySpawner</object>
+    <object>objects\Supervisor</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\Test_Room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
