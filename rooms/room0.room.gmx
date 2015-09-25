@@ -53,9 +53,9 @@
   <instances>
     <instance objName="Tower" x="96" y="384" name="inst_87039B0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SubTower" x="96" y="320" name="inst_6B3EAA54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Enemy" x="864" y="96" name="inst_6EC2B21A" locked="0" code="" scaleX="0.100000001490116" scaleY="0.100000001490116" colour="4294967295" rotation="0"/>
-    <instance objName="Enemy" x="224" y="320" name="inst_2EDC4E65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Enemy" x="480" y="288" name="inst_2EDC4E65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RangeMonkey" x="320" y="416" name="inst_8BC56F87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="EnenySpawner" x="672" y="32" name="inst_62B68E54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

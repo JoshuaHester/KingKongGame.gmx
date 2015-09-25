@@ -20,6 +20,7 @@
     <object>objects\Enemy</object>
     <object>objects\RangeMonkey</object>
     <object>objects\ThrownBanana</object>
+    <object>objects\EnenySpawner</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
