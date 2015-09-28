@@ -11,6 +11,7 @@
     <sprite>sprites\EnemySprite</sprite>
     <sprite>sprites\RangeMonkeySprite</sprite>
     <sprite>sprites\BananaSprite</sprite>
+    <sprite>sprites\meleeMonkey</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -24,6 +25,7 @@
     <object>objects\Supervisor</object>
     <object>objects\MonkeyCreator</object>
     <object>objects\Money</object>
+    <object>objects\melee_Monkey</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Test_Room</room>
