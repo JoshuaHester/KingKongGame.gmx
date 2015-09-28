@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>mp_potential_step(Tower.x, Tower.y, .7, false)
+            <string>mp_potential_step(MainTower.x, MainTower.y, .7, false)
 </string>
           </argument>
         </arguments>

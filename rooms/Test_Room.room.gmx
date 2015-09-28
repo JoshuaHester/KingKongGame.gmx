@@ -95,6 +95,7 @@
     <instance objName="Tower" x="256" y="64" name="inst_810639BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Tower" x="416" y="96" name="inst_EB4B680B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Tower" x="544" y="96" name="inst_6FFE0888" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="RangeMonkey" x="192" y="64" name="inst_4DD8BC88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
