@@ -16,12 +16,14 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\Tower</object>
-    <object>objects\SubTower</object>
+    <object>objects\MainTower</object>
     <object>objects\Enemy</object>
     <object>objects\RangeMonkey</object>
     <object>objects\ThrownBanana</object>
     <object>objects\EnenySpawner</object>
     <object>objects\Supervisor</object>
+    <object>objects\MonkeyCreator</object>
+    <object>objects\Money</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Test_Room</room>

@@ -49,6 +49,7 @@
           <argument>
             <kind>1</kind>
             <string>instance_destroy()
+global.money += 5
 </string>
           </argument>
         </arguments>
