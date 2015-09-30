@@ -15,13 +15,16 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\Fnt_Main</font>
+  </fonts>
   <objects name="objects">
     <object>objects\Tower</object>
     <object>objects\MainTower</object>
     <object>objects\Enemy</object>
     <object>objects\RangeMonkey</object>
     <object>objects\ThrownBanana</object>
-    <object>objects\EnenySpawner</object>
+    <object>objects\EnemySpawner</object>
     <object>objects\Supervisor</object>
     <object>objects\MonkeyCreator</object>
     <object>objects\Money</object>

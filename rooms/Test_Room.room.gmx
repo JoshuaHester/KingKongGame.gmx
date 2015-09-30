@@ -53,10 +53,6 @@
   <instances>
     <instance objName="Tower" x="96" y="384" name="inst_87039B0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="MainTower" x="96" y="320" name="inst_6B3EAA54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="EnenySpawner" x="672" y="32" name="inst_62B68E54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Supervisor" x="32" y="32" name="inst_1B78F625" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="MonkeyCreator" x="64" y="32" name="inst_03C937D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Money" x="96" y="32" name="inst_52E0420B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Tower" x="224" y="192" name="inst_7F3BAA02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Tower" x="256" y="192" name="inst_A0EFEBBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Tower" x="288" y="192" name="inst_46C409F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -97,6 +93,11 @@
     <instance objName="Tower" x="544" y="96" name="inst_6FFE0888" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RangeMonkey" x="192" y="64" name="inst_4DD8BC88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="melee_Monkey" x="576" y="96" name="inst_1C0BBFF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="EnemySpawner" x="704" y="32" name="inst_F693C025" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Supervisor" x="96" y="32" name="inst_F8E01290" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="MonkeyCreator" x="64" y="32" name="inst_8DB631F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Money" x="32" y="32" name="inst_A26FD8FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Enemy" x="672" y="128" name="inst_5D18926F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
