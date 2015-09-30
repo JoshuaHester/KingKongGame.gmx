@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>cooldown = 300
-
+            <string>cooldown = 600
+primed=true
 time = 0
 oldX=x
 oldY=y
@@ -53,22 +53,27 @@ oldY=y
           <argument>
             <kind>1</kind>
             <string>
-isClose = distance_to_object(Enemy)
+isClose = distance_to_object(instance_nearest(x,y,Enemy))
 if(time &lt;= 0){
-    if isClose &lt; 200 {
-        //move_towards_point(Enemy.x,Enemy.y,50)
-        //move_towards_point(oldX,oldY,50)
-        x=Enemy.x
-        y=Enemy.y
-        
-    }
-time = cooldown
+    primed = true
 } 
 else{
     time--
     x=oldX
     y=oldY
+    
 }
+if isClose &lt; 200 {
+   //     move_towards_point(instance_nearest(oldX,oldY,Enemy).x,instance_nearest(oldX,oldY,Enemy).y,5)
+       x=instance_nearest(oldX,oldY,Enemy).x
+       y=instance_nearest(oldX,oldY,Enemy).y
+       time = cooldown
+       primed=false
+}
+
+
+
+
 </string>
           </argument>
         </arguments>

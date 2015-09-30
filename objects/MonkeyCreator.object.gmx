@@ -48,9 +48,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.money &gt;= 10) and global.onTower = true {
+            <string>tower = instance_nearest(mouse_x,mouse_y,Tower)
+if (global.money &gt;= 10) and global.onTower = true and !tower.isOccupied{
     instance_create(mouse_x, mouse_y, RangeMonkey)
     global.money -= 10;
+    tower.isOccupied = true
 }
 </string>
           </argument>
