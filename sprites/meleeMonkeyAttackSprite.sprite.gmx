@@ -20,12 +20,12 @@
   <width>200</width>
   <height>70</height>
   <frames>
-    <frame index="0">images\meleeMonkey_0.png</frame>
-    <frame index="1">images\meleeMonkey_1.png</frame>
-    <frame index="2">images\meleeMonkey_2.png</frame>
-    <frame index="3">images\meleeMonkey_3.png</frame>
-    <frame index="4">images\meleeMonkey_4.png</frame>
-    <frame index="5">images\meleeMonkey_5.png</frame>
-    <frame index="6">images\meleeMonkey_6.png</frame>
+    <frame index="0">images\meleeMonkeyAttackSprite_0.png</frame>
+    <frame index="1">images\meleeMonkeyAttackSprite_1.png</frame>
+    <frame index="2">images\meleeMonkeyAttackSprite_2.png</frame>
+    <frame index="3">images\meleeMonkeyAttackSprite_3.png</frame>
+    <frame index="4">images\meleeMonkeyAttackSprite_4.png</frame>
+    <frame index="5">images\meleeMonkeyAttackSprite_5.png</frame>
+    <frame index="6">images\meleeMonkeyAttackSprite_6.png</frame>
   </frames>
 </sprite>

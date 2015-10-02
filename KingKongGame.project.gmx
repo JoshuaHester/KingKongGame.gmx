@@ -4,7 +4,10 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\explosionSound</sound>
+    <sound>sound\banannaSound</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\TowerSprite</sprite>
     <sprite>sprites\ESBSprite</sprite>
@@ -12,10 +15,15 @@
     <sprite>sprites\EnemySprite</sprite>
     <sprite>sprites\RangeMonkeySprite</sprite>
     <sprite>sprites\BananaSprite</sprite>
-    <sprite>sprites\meleeMonkey</sprite>
+    <sprite>sprites\meleeMonkeyAttackSprite</sprite>
+    <sprite>sprites\meleeMonkeySprite</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\Scr_Wave.gml</script>
+    <script>scripts\throwDirection.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\Fnt_Main</font>
   </fonts>
@@ -32,6 +40,7 @@
     <object>objects\melee_Monkey</object>
     <object>objects\BaseMonkey</object>
     <object>objects\BabyMonkey</object>
+    <object>objects\Projectile</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Test_Room</room>
