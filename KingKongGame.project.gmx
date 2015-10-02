@@ -7,7 +7,8 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\TowerSprite</sprite>
-    <sprite>sprites\SubTowerSprite</sprite>
+    <sprite>sprites\ESBSprite</sprite>
+    <sprite>sprites\BabyKongSprite</sprite>
     <sprite>sprites\EnemySprite</sprite>
     <sprite>sprites\RangeMonkeySprite</sprite>
     <sprite>sprites\BananaSprite</sprite>
