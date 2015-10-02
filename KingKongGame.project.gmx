@@ -30,6 +30,8 @@
     <object>objects\MonkeyCreator</object>
     <object>objects\Money</object>
     <object>objects\melee_Monkey</object>
+    <object>objects\BaseMonkey</object>
+    <object>objects\BabyMonkey</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Test_Room</room>
