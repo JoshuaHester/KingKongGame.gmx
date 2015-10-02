@@ -25,14 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
-needs occupation variable
-
-
-
-
-
-*/
+            <string>isOccupied = false
 </string>
           </argument>
         </arguments>
