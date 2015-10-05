@@ -7,8 +7,8 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>3</bbox_left>
-  <bbox_right>45</bbox_right>
+  <bbox_left>1</bbox_left>
+  <bbox_right>48</bbox_right>
   <bbox_top>1</bbox_top>
   <bbox_bottom>48</bbox_bottom>
   <HTile>0</HTile>
@@ -20,6 +20,8 @@
   <width>50</width>
   <height>52</height>
   <frames>
-    <frame index="0">images\RangeMonkeySprite_0.png</frame>
+    <frame index="0">images\RangeMonkeyShootSprite_0.png</frame>
+    <frame index="1">images\RangeMonkeyShootSprite_1.png</frame>
+    <frame index="2">images\RangeMonkeyShootSprite_2.png</frame>
   </frames>
 </sprite>

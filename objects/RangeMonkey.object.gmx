@@ -29,8 +29,9 @@
 range=400
 cooldown = 90
 recharge = 0
-image_speed = .2
+image_speed = 0
 cost = 15
+state = "waiting"
 </string>
           </argument>
         </arguments>
@@ -62,6 +63,7 @@ if recharge &lt; 1{
          bDir= throwDirection(x,y,mSpeed,enemy.x,enemy.y,enemy.speed,enemy.direction)
          
          bSpeed = mSpeed
+         state = "active"
          inst = instance_create(x,y,ThrownBanana)
          with(inst){
             speed = bSpeed
@@ -74,6 +76,63 @@ if recharge &lt; 1{
 else {
     recharge--
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if sprite_index == RangeMonkeyShootSprite{
+    state = "waiting"
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if state == "waiting"{
+    sprite_index = RangeMonkeySprite
+    image_speed=0
+}
+else{
+    sprite_index = RangeMonkeyShootSprite
+    image_speed=3
+}
+
+draw_sprite_ext(sprite_index,image_speed, x, y, image_xscale,image_yscale, direction,image_blend, image_alpha)
 </string>
           </argument>
         </arguments>

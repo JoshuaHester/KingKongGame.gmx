@@ -14,6 +14,7 @@
     <sprite>sprites\BabyKongSprite</sprite>
     <sprite>sprites\EnemySprite</sprite>
     <sprite>sprites\RangeMonkeySprite</sprite>
+    <sprite>sprites\RangeMonkeyShootSprite</sprite>
     <sprite>sprites\BananaSprite</sprite>
     <sprite>sprites\meleeMonkeyAttackSprite</sprite>
     <sprite>sprites\meleeMonkeySprite</sprite>
