@@ -73,7 +73,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Bhealth -= 5
+            <string>Bhealth -= other.eDamage
 </string>
           </argument>
         </arguments>

@@ -141,6 +141,7 @@ else if state == "moving"{
 else {
     image_index = kaMonkeykazeBoomSprite
     image_speed=3
+    sprite_index++
     }
     
 

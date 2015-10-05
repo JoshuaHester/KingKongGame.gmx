@@ -34,6 +34,7 @@ else {
 }
 sx = otherX + tvx * T
 sy = otherY + tvy * T
+
 X = point_direction(startX,startY,sx,sy)
 
 return X
