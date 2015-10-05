@@ -59,6 +59,7 @@ enemy = instance_nearest(x,y,Enemy)
 if recharge &lt; 1{
      if (distance_to_object(enemy) &lt; range){
          bDir= throwDirection(x,y,mSpeed,enemy.x,enemy.y,enemy.speed,enemy.direction)
+         
          bSpeed = mSpeed
          inst = instance_create(x,y,ThrownBanana)
          with(inst){
