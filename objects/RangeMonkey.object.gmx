@@ -30,6 +30,7 @@ range=400
 cooldown = 90
 recharge = 0
 image_speed = .2
+cost = 15
 </string>
           </argument>
         </arguments>

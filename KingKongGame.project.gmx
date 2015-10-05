@@ -17,6 +17,7 @@
     <sprite>sprites\BananaSprite</sprite>
     <sprite>sprites\meleeMonkeyAttackSprite</sprite>
     <sprite>sprites\meleeMonkeySprite</sprite>
+    <sprite>sprites\genericBoxSprite</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -37,10 +38,11 @@
     <object>objects\Supervisor</object>
     <object>objects\MonkeyCreator</object>
     <object>objects\Money</object>
-    <object>objects\melee_Monkey</object>
+    <object>objects\MeleeMonkey</object>
     <object>objects\BaseMonkey</object>
     <object>objects\BabyMonkey</object>
     <object>objects\Projectile</object>
+    <object>objects\Barrier</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Test_Room</room>
