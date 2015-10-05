@@ -18,6 +18,9 @@
     <sprite>sprites\meleeMonkeyAttackSprite</sprite>
     <sprite>sprites\meleeMonkeySprite</sprite>
     <sprite>sprites\genericBoxSprite</sprite>
+    <sprite>sprites\kaMonkeykazeSprite</sprite>
+    <sprite>sprites\kaMonkeykazeMoveSprite</sprite>
+    <sprite>sprites\kaMonkeykazeBoomSprite</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -43,6 +46,7 @@
     <object>objects\BabyMonkey</object>
     <object>objects\Projectile</object>
     <object>objects\Barrier</object>
+    <object>objects\kaMonkeykaze</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Test_Room</room>
