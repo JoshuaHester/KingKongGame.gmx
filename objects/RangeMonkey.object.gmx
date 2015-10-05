@@ -59,11 +59,12 @@ var bDir
 var bSpeed
 enemy = instance_nearest(x,y,Enemy)
 if recharge &lt; 1{
-     if (distance_to_object(enemy) &lt; range){
+     if (distance_to_object(enemy) &lt; range)and !audio_is_playing(banannaSound){
          bDir= throwDirection(x,y,mSpeed,enemy.x,enemy.y,enemy.speed,enemy.direction)
-         
+         audio_play_sound(banannaSound,1,false)
          bSpeed = mSpeed
          state = "active"
+
          inst = instance_create(x,y,ThrownBanana)
          with(inst){
             speed = bSpeed
@@ -129,7 +130,7 @@ else {
 }
 else{
     sprite_index = RangeMonkeyShootSprite
-    image_speed=3
+    image_speed=5
 }
 
 draw_sprite_ext(sprite_index,image_speed, x, y, image_xscale,image_yscale, direction,image_blend, image_alpha)

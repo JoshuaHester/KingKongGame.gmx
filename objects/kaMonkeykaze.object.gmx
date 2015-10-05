@@ -50,8 +50,11 @@ state = "waiting"
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>enemy = instance_nearest(x,y,Enemy)
+            <string>
+enemy = instance_nearest(x,y,Enemy)
+
 if distance_to_object(enemy) &lt;= range+10{
+    state = "moving"
     move_towards_point(enemy.x,enemy.y,5)
 } 
 </string>
@@ -76,13 +79,15 @@ if distance_to_object(enemy) &lt;= range+10{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy()
+            <string>state = "boom"
+other.health -=900
+instance_destroy()
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="7" enumb="3">
+    <event eventtype="7" enumb="7">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -99,7 +104,7 @@ if distance_to_object(enemy) &lt;= range+10{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if sprite_index = kaMonkeykazeBoomSprite or sprite_index = kaMonkeykazeMoveSprite{
+            <string>/*if sprite_index = kaMonkeykazeBoomSprite or sprite_index = kaMonkeykazeMoveSprite{
     state = "waiting"
 }
 </string>
@@ -126,13 +131,16 @@ if distance_to_object(enemy) &lt;= range+10{
             <kind>1</kind>
             <string>if state == "waiting"{
     image_index = kaMonkeykazeSprite
+    image_speed=0
     }
 
 else if state == "moving"{
     image_index = kaMonkeykazeMoveSprite
+    image_speed=0
     }
-else if state == "boom"{
+else {
     image_index = kaMonkeykazeBoomSprite
+    image_speed=3
     }
     
 

@@ -28,15 +28,17 @@
             <string>global.onTower = true
 monkey[0] = MeleeMonkey
 monkey[1] = RangeMonkey
+monkey[2] = kaMonkeykaze
 
 cost[0] = 15
 cost[1] = 10
+cost[2] = 30
 
-numMonkeys=1 //starts at 0
+numMonkeys=2 //starts at 0
 s = 0
 buttonSize = 70
 buttonStartCoX = 10
-buttonStartCoY = 550
+buttonStartCoY = 650
 </string>
           </argument>
         </arguments>
@@ -73,9 +75,9 @@ if (global.money &gt;= cost[s]) and global.onTower = true and !tower.isOccupied{
        if(point_in_rectangle(mouse_x,mouse_y,bX,bY,bX+buttonSize,bY+buttonSize)){
             s = i
        }
-       else{
+       
             bX = bX + buttonSize + 5
-       }
+       
     }
 }
 
@@ -105,7 +107,7 @@ if (global.money &gt;= cost[s]) and global.onTower = true and !tower.isOccupied{
             <kind>1</kind>
             <string>draw_text(10,10, "Money; " + string(global.money))
 
-draw_text(10,30, string(s))
+draw_text(10,30,"Health: "+ string(BabyMonkey.Bhealth))
 currX = buttonStartCoX
 currY = buttonStartCoY
 outline=false
@@ -125,6 +127,8 @@ for(i=0;i&lt;=numMonkeys;i++){
         draw_sprite(meleeMonkeySprite,0,currX+35,currY+35)
     }else if(i==1){
         draw_sprite(RangeMonkeySprite,0,currX+35,currY+35)
+    }else if(i==2){
+        draw_sprite(kaMonkeykazeSprite,0,currX+35,currY+35)
     }
     
     
