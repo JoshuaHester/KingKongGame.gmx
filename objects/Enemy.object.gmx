@@ -51,8 +51,7 @@ eDamage = 10
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-monkies = RangeMonkey and MeleeMonkey and kaMonkeykaze and BabyMonkey
+            <string>monkies = RangeMonkey and MeleeMonkey and kaMonkeykaze and BabyMonkey
 if instance_nearest(x,y,monkies){
    mp_potential_step(monkies.x,monkies.y,eSpeed,false) 
 }

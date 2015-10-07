@@ -125,6 +125,7 @@ for(i=0;i&lt;=numMonkeys;i++){
     draw_rectangle(currX,currY,currX+buttonSize,currY+buttonSize,outline)
     if(i==0){
         draw_sprite(meleeMonkeySprite,0,currX+35,currY+35)
+        
     }else if(i==1){
         draw_sprite(RangeMonkeySprite,0,currX+35,currY+35)
     }else if(i==2){
