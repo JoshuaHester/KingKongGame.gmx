@@ -28,9 +28,9 @@
             <string>cooldown = 300
 recharge = 0
 image_speed = 0
-range = 5
+range = 50
 state = "waiting"
-cost = 10
+index = 0
 </string>
           </argument>
         </arguments>
@@ -55,7 +55,7 @@ cost = 10
             <kind>1</kind>
             <string>enemy=instance_nearest(x,y,Enemy)
 if distance_to_object(enemy) &lt;= range+10{
-    if enemy.y &gt;= y{
+    if enemy.x &lt; x{
         image_xscale=-1
     }
     else{
@@ -128,8 +128,8 @@ else{
 
 draw_sprite_ext(sprite_index,image_speed, x, y, image_xscale,image_yscale, direction,image_blend, image_alpha)
 
-if recharge &gt;=0 {
-    draw_text(x-20,y -40,"Recharge: " + string(recharge/30))
+if recharge &gt;0 {
+    draw_text(x-20,y -40,string(recharge/30))
 } 
 </string>
           </argument>

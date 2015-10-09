@@ -26,8 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0
-range = 200
+range = 90
 state = "waiting"
+index = 2
+mspeed = 5
 </string>
           </argument>
         </arguments>
@@ -73,13 +75,24 @@ state = "waiting"
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>tower = instance_nearest(x,y,Tower)
 enemy = instance_nearest(x,y,Enemy)
 
-if distance_to_object(enemy) &lt;= range+10{
+if distance_to_object(enemy) &lt;= range and state == "waiting"{
+    target = enemy
     state = "moving"
-    move_towards_point(enemy.x,enemy.y,5)
+    tower.isOccupied=false
 } 
+if state=="moving"{
+    if instance_exists(target){
+        move_towards_point(target.x,target.y,mspeed)
+    }
+    else{
+        state = "boom"
+        speed =0
+        alarm[1] = 10
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -107,31 +120,6 @@ speed =0
 other.health -=900
 alarm[1] = 10
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="7">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*if sprite_index = kaMonkeykazeBoomSprite or sprite_index = kaMonkeykazeMoveSprite{
-    state = "waiting"
-}
 </string>
           </argument>
         </arguments>
