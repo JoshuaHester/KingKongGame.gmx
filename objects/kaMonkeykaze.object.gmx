@@ -50,7 +50,8 @@ state = "waiting"
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>instance_destroy()
+</string>
           </argument>
         </arguments>
       </action>
@@ -102,9 +103,10 @@ if distance_to_object(enemy) &lt;= range+10{
           <argument>
             <kind>1</kind>
             <string>state = "boom"
+speed =0
 other.health -=900
-alarm = 300
-instance_destroy()
+alarm[1] = 10
+
 </string>
           </argument>
         </arguments>
@@ -163,8 +165,8 @@ else if state == "moving"{
     }
 else {
     sprite_index = kaMonkeykazeBoomSprite
-    image_speed=3
-    sprite_index++
+    image_speed=.5
+    
     }
     
 
