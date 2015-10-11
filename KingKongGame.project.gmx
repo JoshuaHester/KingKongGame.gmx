@@ -8,7 +8,7 @@
     <sound>sound\explosionSound</sound>
     <sound>sound\banannaSound</sound>
     <sound>sound\monkeyPounce</sound>
-    <sound>sound\sound3</sound>
+    <sound>sound\tribalEbonpyreBGM</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\TowerSprite</sprite>
