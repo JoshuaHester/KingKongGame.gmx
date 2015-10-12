@@ -26,6 +26,34 @@
           <argument>
             <kind>1</kind>
             <string>Bhealth = 100
+state = "happy"
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//if sprite_index = cryingBabySprite{
+    show_message("French Toast!!, the Baby is hurt!")
+    state = "happy"
+    room_goto_previous()
+//}
 </string>
           </argument>
         </arguments>
@@ -49,7 +77,9 @@
           <argument>
             <kind>1</kind>
             <string>if Bhealth &lt;= 0 {
+    state = "crying"
     room_goto_previous()
+    //alarm[3] = 5
     }
 </string>
           </argument>
@@ -74,6 +104,39 @@
           <argument>
             <kind>1</kind>
             <string>Bhealth -= other.eDamage
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if state == "happy" {
+    sprite_index = BabyKongSprite
+    image_speed = 0
+}
+
+else {
+    sprite_index = cryingBabySprite
+    image_speed = 10
+}
+
+draw_sprite_ext(sprite_index,image_speed, x, y, image_xscale,image_yscale, 0 ,image_blend, image_alpha)
 </string>
           </argument>
         </arguments>

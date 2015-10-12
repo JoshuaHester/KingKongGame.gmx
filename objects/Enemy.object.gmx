@@ -26,9 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>eHealth = 50
-eSpeed = .7
+eSpeed = 3
 reward=10
-eDamage = 10
+eDamage = 15
 </string>
           </argument>
         </arguments>
@@ -76,9 +76,9 @@ eDamage = 10
             <kind>1</kind>
             <string>state = "moving"
 monkies = RangeMonkey and MeleeMonkey and kaMonkeykaze and BabyMonkey
-if instance_nearest(x,y,monkies){
-   mp_potential_step(monkies.x,monkies.y,eSpeed,false) 
-}
+//if instance_nearest(x,y,monkies){
+   mp_potential_step(BabyMonkey.x,BabyMonkey.y,eSpeed,false) 
+//}
 if eHealth &lt;= 0 and !audio_is_playing(explosionSound){
     audio_play_sound(explosionSound,1,false)
     state = "boom"

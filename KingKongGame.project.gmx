@@ -14,6 +14,7 @@
   <sprites name="sprites">
     <sprite>sprites\TowerSprite</sprite>
     <sprite>sprites\ESBSprite</sprite>
+    <sprite>sprites\cryingBabySprite</sprite>
     <sprite>sprites\BabyKongSprite</sprite>
     <sprite>sprites\boomSprite</sprite>
     <sprite>sprites\bomberSprite</sprite>
@@ -51,9 +52,10 @@
     <object>objects\Tower</object>
     <object>objects\MainTower</object>
     <object>objects\Enemy</object>
+    <object>objects\Bomber</object>
     <object>objects\RangeMonkey</object>
-    <object>objects\ThrownBanana</object>
     <object>objects\EnemySpawner</object>
+    <object>objects\ThrownBanana</object>
     <object>objects\Supervisor</object>
     <object>objects\MonkeyCreator</object>
     <object>objects\Money</object>
