@@ -115,7 +115,9 @@ if state=="moving"{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state = "boom"
+            <string> if state = "boom" and !audio_is_playing(BoomSound){
+            audio_play_sound(BoomSound,1,false)}
+state = "boom"
 speed =0
 other.health -=900
 alarm[1] = 10

@@ -9,18 +9,31 @@
     <sound>sound\banannaSound</sound>
     <sound>sound\monkeyPounce</sound>
     <sound>sound\tribalEbonpyreBGM</sound>
+    <sound>sound\BoomSound</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\TowerSprite</sprite>
     <sprite>sprites\ESBSprite</sprite>
     <sprite>sprites\BabyKongSprite</sprite>
+    <sprite>sprites\boomSprite</sprite>
+    <sprite>sprites\bomberSprite</sprite>
     <sprite>sprites\EnemySprite</sprite>
     <sprite>sprites\RangeMonkeySprite</sprite>
     <sprite>sprites\RangeMonkeyShootSprite</sprite>
     <sprite>sprites\BananaSprite</sprite>
     <sprite>sprites\meleeMonkeyAttackSprite</sprite>
     <sprite>sprites\meleeMonkeySprite</sprite>
+    <sprite>sprites\ambulance</sprite>
+    <sprite>sprites\exitButton</sprite>
+    <sprite>sprites\hoverStart</sprite>
+    <sprite>sprites\hoverExt</sprite>
+    <sprite>sprites\car</sprite>
+    <sprite>sprites\LeftRightRoad</sprite>
+    <sprite>sprites\startButton</sprite>
+    <sprite>sprites\police_car</sprite>
     <sprite>sprites\genericBoxSprite</sprite>
+    <sprite>sprites\RoadUpDownSprite</sprite>
+    <sprite>sprites\MenuTitle</sprite>
     <sprite>sprites\kaMonkeykazeSprite</sprite>
     <sprite>sprites\kaMonkeykazeMoveSprite</sprite>
     <sprite>sprites\kaMonkeykazeBoomSprite</sprite>
@@ -50,9 +63,30 @@
     <object>objects\Projectile</object>
     <object>objects\Barrier</object>
     <object>objects\kaMonkeykaze</object>
+    <objects name="Menu">
+      <object>objects\PoliceCar</object>
+      <object>objects\Obj_MainTower</object>
+      <object>objects\Obj_Tower</object>
+      <object>objects\Obj_Enemy</object>
+      <object>objects\Obj_UDroad</object>
+      <object>objects\Obj_RangeMonkey</object>
+      <object>objects\Obj_meleeMonkey</object>
+      <object>objects\Exit</object>
+      <object>objects\title</object>
+      <object>objects\silverCar</object>
+      <object>objects\Start</object>
+      <object>objects\UDRoad</object>
+      <object>objects\LRRoad</object>
+      <object>objects\Obj_LRroad</object>
+      <object>objects\Obj_KazeMonkey</object>
+      <object>objects\AmbulanceCar</object>
+      <object>objects\Obj_BabyMonkey</object>
+      <object>objects\Obj_banana</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Test_Room</room>
+    <room>rooms\Menu_Room</room>
+    <room>rooms\Test_Room_new</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
