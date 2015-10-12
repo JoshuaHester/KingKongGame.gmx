@@ -165,15 +165,15 @@ if eHealth &lt;= 0 and !audio_is_playing(explosionSound){
             <kind>1</kind>
             <string>if state == "moving"{
     sprite_index = EnemySprite
-    image_speed = 20
+    image_speed = 2
 }
 
 else {
     sprite_index = boomSprite 
-    image_speed = 2
+    image_speed = .4
 }
 
-draw_sprite_ext(sprite_index,image_speed, x, y, image_xscale,image_yscale,0,image_blend, image_alpha)
+draw_sprite_ext(sprite_index,image_index, x, y, image_xscale,image_yscale,0,image_blend, image_alpha)
 
 draw_text(x-15,y-20,string(eHealth))
 </string>

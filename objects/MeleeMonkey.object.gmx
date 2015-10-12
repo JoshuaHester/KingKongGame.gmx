@@ -123,10 +123,10 @@ recharge--
 }
 else{
     sprite_index = meleeMonkeyAttackSprite
-    image_speed=3
+    image_speed=.4
 }
 
-draw_sprite_ext(sprite_index,image_speed, x, y, image_xscale,image_yscale, direction,image_blend, image_alpha)
+draw_sprite_ext(sprite_index,image_index, x, y, image_xscale,image_yscale, direction,image_blend, image_alpha)
 
 if recharge &gt;0 {
     draw_text(x-20,y -40,string(recharge/30))

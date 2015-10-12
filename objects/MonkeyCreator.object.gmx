@@ -41,8 +41,11 @@ sprite[2] = kaMonkeykazeSprite
 numMonkeys=2 //starts at 0
 s = 0
 buttonSize = 70
-buttonStartCoX = 10
-buttonStartCoY = 650
+GUIstartX = 10
+GUIstartY = 10
+textYoffset = 20
+buttonStartCoX = 0
+buttonStartCoY = 0
 </string>
           </argument>
         </arguments>
@@ -109,11 +112,14 @@ if (global.money &gt;= cost[s]) and global.onTower = true and !tower.isOccupied{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(10,10, "Money: " + string(global.money))
-
-draw_text(10,30,"Health: "+ string(BabyMonkey.Bhealth))
-currX = buttonStartCoX
-currY = buttonStartCoY
+            <string>currX = GUIstartX
+currY = GUIstartY
+draw_text(currX,currY, "Money: " + string(global.money))
+currY = currY+20
+draw_text(currX,currY,"Health: "+ string(BabyMonkey.Bhealth))
+currY = currY+40
+buttonStartCoX = currX
+buttonStartCoY = currY
 outline=false
 for(i=0;i&lt;=numMonkeys;i++){
     if(cost[i]&gt;global.money){
