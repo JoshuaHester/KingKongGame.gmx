@@ -95,6 +95,7 @@
     <instance objName="LRRoad" x="256" y="448" name="inst_280E71E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="LRRoad" x="768" y="448" name="inst_48EC3D00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="LRRoad" x="512" y="448" name="inst_F3054022" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="screenSize" x="32" y="32" name="inst_5A2510D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

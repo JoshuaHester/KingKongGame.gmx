@@ -46,7 +46,7 @@
     <script>scripts\throwDirection.gml</script>
   </scripts>
   <fonts name="fonts">
-    <font>fonts\Fnt_Main</font>
+    <font>fonts\mainFont</font>
   </fonts>
   <objects name="objects">
     <object>objects\Tower</object>
@@ -85,6 +85,7 @@
       <object>objects\Obj_BabyMonkey</object>
       <object>objects\Obj_banana</object>
     </objects>
+    <object>objects\screenSize</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu_Room</room>

@@ -114,6 +114,7 @@ if (global.money &gt;= cost[s]) and global.onTower = true and !tower.isOccupied{
             <kind>1</kind>
             <string>currX = GUIstartX
 currY = GUIstartY
+draw_set_font(mainFont)
 draw_text(currX,currY, "Money: " + string(global.money))
 currY = currY+20
 draw_text(currX,currY,"Health: "+ string(BabyMonkey.Bhealth))
@@ -135,7 +136,7 @@ for(i=0;i&lt;=numMonkeys;i++){
     draw_rectangle(currX,currY,currX+buttonSize,currY+buttonSize,outline)
     draw_sprite(sprite[i],0,currX+35,currY+35)
     //cost text
-    draw_text(currX,currY-15, "cost: " + string(cost[i]))
+    draw_text(currX,currY-20, "cost: " + string(cost[i]))
     
     currX = currX + buttonSize + 5
 }
