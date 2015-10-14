@@ -59,7 +59,7 @@
     <object>objects\EnemySpawner</object>
     <object>objects\ThrownBanana</object>
     <object>objects\Supervisor</object>
-    <object>objects\MonkeyCreator</object>
+    <object>objects\GUI</object>
     <object>objects\Money</object>
     <object>objects\MeleeMonkey</object>
     <object>objects\BaseMonkey</object>

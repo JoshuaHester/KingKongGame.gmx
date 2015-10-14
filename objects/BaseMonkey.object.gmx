@@ -52,7 +52,7 @@ damage = 20
             <kind>1</kind>
             <string>tower = instance_nearest(mouse_x,mouse_y,Tower)
 if global.onTower and tower.isOccupied{
-    global.money += MonkeyCreator.cost[index]/2
+    global.money += GUI.cost[index]/2
     instance_destroy()
     tower.isOccupied = false
 }

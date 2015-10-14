@@ -55,7 +55,7 @@
   <instances>
     <instance objName="EnemySpawner" x="992" y="96" name="inst_F693C025" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Money" x="32" y="64" name="inst_25C66A64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="MonkeyCreator" x="32" y="32" name="inst_208ECEED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GUI" x="32" y="32" name="inst_208ECEED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Supervisor" x="64" y="32" name="inst_1627C763" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Tower" x="96" y="224" name="inst_EB38ADD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Tower" x="288" y="224" name="inst_E16DEE21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
