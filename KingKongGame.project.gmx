@@ -10,6 +10,8 @@
     <sound>sound\monkeyPounce</sound>
     <sound>sound\tribalEbonpyreBGM</sound>
     <sound>sound\BoomSound</sound>
+    <sound>sound\crySound</sound>
+    <sound>sound\splatSound</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\TowerSprite</sprite>

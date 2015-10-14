@@ -26,15 +26,15 @@
           <argument>
             <kind>1</kind>
             <string>eHealth = 100
-eSpeed = .7
-reward=10
+eSpeed = .9
+reward=15
 eDamage = 35
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="2">
+    <event eventtype="7" enumb="7">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -51,7 +51,9 @@ eDamage = 35
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy()
+            <string>if sprite_index = boomSprite{
+    instance_destroy()
+    }
 </string>
           </argument>
         </arguments>
@@ -76,17 +78,19 @@ eDamage = 35
             <kind>1</kind>
             <string>if state == "moving"{
     sprite_index = bomberSprite
-    image_speed = 20
+    image_speed = 0
 }
 
 else {
     sprite_index = boomSprite 
-    image_speed = .05
+    image_speed = .5
 }
 
-draw_sprite_ext(sprite_index,image_speed, x, y, image_xscale,image_yscale,0,image_blend, image_alpha)
+draw_sprite_ext(sprite_index,image_index, x, y, image_xscale,image_yscale,0,image_blend, image_alpha)
 
-draw_text(x-15,y-35,string(eHealth))
+if eHealth &gt; 0 {
+    draw_text(x-15,y-35,string(eHealth))
+}
 </string>
           </argument>
         </arguments>

@@ -58,6 +58,16 @@ state = "waiting"
 var bDir
 var bSpeed
 enemy = instance_nearest(x,y,Enemy)
+
+if distance_to_object(enemy) &lt;= range{
+    if enemy.x &lt; x{
+        image_xscale=-1
+    }
+    else{
+        image_xscale=1
+    }
+}
+
 if recharge &lt; 1{
      if (distance_to_object(enemy) &lt; range)and !audio_is_playing(banannaSound){
          bDir= throwDirection(x,y,mSpeed,enemy.x,enemy.y,enemy.speed,enemy.direction)

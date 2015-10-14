@@ -73,6 +73,10 @@
             <kind>1</kind>
             <string>other.eHealth=other.eHealth-damage
 instance_destroy()
+
+if !audio_is_playing(splatSound) {
+    audio_play_sound(splatSound,1,false)
+}
 </string>
           </argument>
         </arguments>

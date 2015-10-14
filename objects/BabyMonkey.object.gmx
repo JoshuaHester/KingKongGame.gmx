@@ -32,33 +32,6 @@ state = "happy"
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="3">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//if sprite_index = cryingBabySprite{
-    show_message("French Toast!!, the Baby is hurt!")
-    state = "happy"
-    room_goto_previous()
-//}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -76,10 +49,11 @@ state = "happy"
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if Bhealth &lt;= 0 {
+            <string>if Bhealth &lt;= 0 and !audio_is_playing(crySound){
+    audio_play_sound(crySound,1,false)
+}
+if Bhealth &lt;= 0 {
     state = "crying"
-    room_goto_previous()
-    //alarm[3] = 5
     }
 </string>
           </argument>
@@ -109,6 +83,33 @@ state = "happy"
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if sprite_index = cryingBabySprite{
+    show_message("French Toast!!, the Baby is hurt!")
+    state = "happy"
+    room_goto_previous()
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -133,10 +134,10 @@ state = "happy"
 
 else {
     sprite_index = cryingBabySprite
-    image_speed = 10
+    image_speed = .3
 }
 
-draw_sprite_ext(sprite_index,image_speed, x, y, image_xscale,image_yscale, 0 ,image_blend, image_alpha)
+draw_sprite_ext(sprite_index,image_index, x, y, image_xscale,image_yscale, 0 ,image_blend, image_alpha)
 </string>
           </argument>
         </arguments>
