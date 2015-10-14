@@ -29,6 +29,7 @@
 eSpeed = .9
 reward=15
 eDamage = 35
+active = true
 </string>
           </argument>
         </arguments>
