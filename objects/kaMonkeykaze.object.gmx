@@ -96,7 +96,7 @@ if state=="moving"{
             audio_play_sound(BoomSound,1,false)}
 state = "boom"
 speed = 0
-other.health -=900
+other.eHealth -=900
 </string>
           </argument>
         </arguments>

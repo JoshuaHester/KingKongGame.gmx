@@ -29,6 +29,7 @@
 eSpeed = 1.5
 reward=10
 eDamage = 15
+active = true
 </string>
           </argument>
         </arguments>
@@ -87,14 +88,17 @@ if eHealth &lt;= 0{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !audio_is_playing(explosionSound){
+            <string>state = "boom"
+speed = 0
+
+if !audio_is_playing(explosionSound){
     audio_play_sound(explosionSound,1, false)
-    state = "boom"
-    speed = 0
+   // state = "boom"
+    //speed = 0
 }    
 
 if sprite_index = boomSprite{
-    instance_destroy()
+    //instance_destroy()
     }
 </string>
           </argument>
@@ -118,10 +122,13 @@ if sprite_index = boomSprite{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string> if !audio_is_playing(explosionSound){
+            <string> state = "boom"
+ if !audio_is_playing(explosionSound){
     audio_play_sound(explosionSound,1,false)
 } 
-   instance_destroy()
+   if sprite_index = boomSprite {
+  // instance_destroy()
+   }
 </string>
           </argument>
         </arguments>

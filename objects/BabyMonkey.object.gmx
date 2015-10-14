@@ -77,7 +77,11 @@ if Bhealth &lt;= 0 {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Bhealth -= other.eDamage
+            <string>if other.active{
+    Bhealth -= other.eDamage
+    other.eHealth = 0
+    other.active = false
+}
 </string>
           </argument>
         </arguments>

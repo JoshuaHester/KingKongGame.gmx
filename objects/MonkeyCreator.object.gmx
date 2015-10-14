@@ -129,9 +129,9 @@ for(i=0;i&lt;=numMonkeys;i++){
         draw_set_color(c_blue)
     }
     if(s==i){
-        outline=true
-    }else{
         outline=false
+    }else{
+        outline=true
     }
     draw_rectangle(currX,currY,currX+buttonSize,currY+buttonSize,outline)
     draw_sprite(sprite[i],0,currX+35,currY+35)
