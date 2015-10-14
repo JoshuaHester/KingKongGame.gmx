@@ -29,6 +29,7 @@
 spawnInterval=150
 spawnTimer=spawnInterval
 planeSpawned=0*/
+waves = 3
 wave = 1
 time = 0
 alarm[0] = 30

@@ -116,7 +116,12 @@ if (global.money &gt;= cost[s]) and global.onTower = true and !tower.isOccupied{
 currY = GUIstartY
 draw_set_font(mainFont)
 draw_text(currX,currY, "Money: " + string(global.money))
-draw_text(currX+800,currY,"Wave: " + string(EnemySpawner.wave))
+if EnemySpawner.wave &lt; 3{
+    draw_text(currX+800,currY,"Wave: " + string(EnemySpawner.wave))
+}
+else {
+    draw_text(currX+800,currY,"Final Wave")
+}
 currY = currY+20
 draw_text(currX,currY,"Health: "+ string(BabyMonkey.Bhealth))
 currY = currY+40
@@ -126,9 +131,9 @@ outline=false
 for(i=0;i&lt;=numMonkeys;i++){
     if(cost[i]&gt;global.money){
         draw_set_color(c_gray)
-    }else{
+    }/*else{
         draw_set_color(c_blue)
-    }
+    }*/
     if(s==i){
         outline=false
     }else{
@@ -138,7 +143,7 @@ for(i=0;i&lt;=numMonkeys;i++){
     draw_sprite(sprite[i],0,currX+35,currY+35)
     //cost text
     draw_text(currX,currY-20, "cost: " + string(cost[i]))
-    
+    draw_set_color(c_blue)
     currX = currX + buttonSize + 5
 }
 

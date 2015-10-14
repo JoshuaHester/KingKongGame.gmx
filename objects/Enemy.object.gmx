@@ -30,6 +30,7 @@ eSpeed = 1.5
 reward=10
 eDamage = 15
 active = true
+hitBaby = false
 </string>
           </argument>
         </arguments>
@@ -57,10 +58,11 @@ active = true
 }
 
 if eHealth &lt;= 0{
+if !hitBaby and state !="boom" {
+    global.money+=reward
+    }
     state = "boom"
     speed = 0
-    
-    global.money+=reward
 }
  else{
   state = "moving"

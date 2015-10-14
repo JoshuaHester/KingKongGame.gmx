@@ -104,6 +104,7 @@ if Bhealth &lt;= 0 {
     state = "hit"
     alarm[0] = 5
     Bhealth -= other.eDamage
+    other.hitBaby = true
     other.eHealth = 0
     other.active = false
 }
