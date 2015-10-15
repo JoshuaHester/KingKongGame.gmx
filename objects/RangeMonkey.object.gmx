@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>mSpeed = 2
+            <string>mSpeed = 2.3
 range=400
 cooldown = 90
 recharge = 0

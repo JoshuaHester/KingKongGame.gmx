@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Bhealth = 100
+            <string>bHealth = 100
 state = "happy"
 </string>
           </argument>
@@ -72,10 +72,10 @@ state = "happy"
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if Bhealth &lt;= 0 and !audio_is_playing(crySound){
+            <string>if bHealth &lt;= 0 and !audio_is_playing(crySound){
     audio_play_sound(crySound,1,false)
 }
-if Bhealth &lt;= 0 {
+if bHealth &lt;= 0 {
     state = "crying"
     }
 </string>
@@ -103,7 +103,7 @@ if Bhealth &lt;= 0 {
             <string>if other.active{
     state = "hit"
     alarm[0] = 5
-    Bhealth -= other.eDamage
+    bHealth -= other.eDamage
     other.hitBaby = true
     other.eHealth = 0
     other.active = false
@@ -162,7 +162,7 @@ if Bhealth &lt;= 0 {
     image_speed = 0
     image_blend = c_white
 }
-else if state == "hit" and Bhealth &gt; 0{
+else if state == "hit" and bHealth &gt; 0{
     image_blend = c_red
     //state = "happy"
 }

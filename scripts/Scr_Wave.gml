@@ -5,11 +5,19 @@ if(time = timeValue){
         time = 0
         alarm[0] = 500
         wave += 1
-        if BabyMonkey.Bhealth <= 75{
-            BabyMonkey.Bhealth += 25
+        if BabyMonkey.bHealth <= 75{
+            BabyMonkey.bHealth += 25
         }else{
-            BabyMonkey.Bhealth = 100
+            BabyMonkey.bHealth = 100
         }
     } else{
-        alarm[0] = 150
+        if wave == 1{
+            alarm[0] = 150
+            }
+        else if wave == 2{
+            alarm[0] = 100
+        }
+        else {
+        alarm[0] = 70
+        }
 }

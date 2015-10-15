@@ -32,7 +32,7 @@ planeSpawned=0*/
 waves = 3
 wave = 1
 time = 0
-alarm[0] = 30
+alarm[0] = 15
 
 offset = 150 
 </string>
@@ -65,15 +65,15 @@ if(Y==y or Y==y+(offset*5)){
 }
 
 if(wave = 1) {
-    Scr_Wave(7, Enemy)
+    Scr_Wave(10, Enemy)
     instance_create(X,Y,Enemy)
 }
 else if(wave = 2) {
-    Scr_Wave(13, Enemy)
+    Scr_Wave(26, Enemy)
     instance_create(X,Y,Bomber)
 }
 else if(wave = 3) {
-    Scr_Wave(19, Enemy)
+    Scr_Wave(30, Enemy)
     instance_create(X,Y,choose(Enemy,Bomber))
 }
 

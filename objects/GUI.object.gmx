@@ -30,15 +30,16 @@ monkey[0] = MeleeMonkey
 monkey[1] = RangeMonkey
 monkey[2] = kaMonkeykaze
 
-cost[0] = 15
-cost[1] = 10
+cost[0] = 10
+cost[1] = 15
 cost[2] = 50
 
 sprite[0] = meleeMonkeySprite
 sprite[1] = RangeMonkeySprite
 sprite[2] = kaMonkeykazeSprite
 
-numMonkeys=2 //starts at 0
+numMonkeys=2 
+costOffset = 2
 s = 0
 buttonSize = 70
 GUIstartX = 10
@@ -73,6 +74,7 @@ buttonStartCoY = 0
 if (global.money &gt;= cost[s]) and global.onTower = true and !tower.isOccupied{
     instance_create(tower.x, tower.y-35, monkey[s])
     global.money -= cost[s]
+    cost[s] += costOffset
     tower.isOccupied = true
 }else{
     bX = buttonStartCoX
@@ -123,7 +125,7 @@ else {
     draw_text(currX+800,currY,"Final Wave")
 }
 currY = currY+20
-draw_text(currX,currY,"Health: "+ string(BabyMonkey.Bhealth))
+draw_text(currX,currY,"Health: "+ string(BabyMonkey.bHealth))
 currY = currY+40
 buttonStartCoX = currX
 buttonStartCoY = currY
