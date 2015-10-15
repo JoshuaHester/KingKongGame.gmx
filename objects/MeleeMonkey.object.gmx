@@ -66,7 +66,7 @@ if distance_to_object(enemy) &lt;= range+10{
 if distance_to_object(enemy) &lt;= range and recharge &lt;= 0 and !audio_is_playing(monkeyPounce){
     audio_play_sound(monkeyPounce,1,false)
     state = "active"
-    enemy.eHealth-=25
+    enemy.eHealth-=35
     recharge = cooldown
 }
 recharge--
