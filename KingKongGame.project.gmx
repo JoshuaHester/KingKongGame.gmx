@@ -40,6 +40,9 @@
     <sprite>sprites\kaMonkeykazeSprite</sprite>
     <sprite>sprites\kaMonkeykazeMoveSprite</sprite>
     <sprite>sprites\kaMonkeykazeBoomSprite</sprite>
+    <sprite>sprites\creditpage</sprite>
+    <sprite>sprites\Baby</sprite>
+    <sprite>sprites\BabyDancingFlipped</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -88,10 +91,14 @@
       <object>objects\Obj_banana</object>
     </objects>
     <object>objects\screenSize</object>
+    <object>objects\object35</object>
+    <object>objects\OppDancingMonkey</object>
+    <object>objects\DancingMonkey</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu_Room</room>
-    <room>rooms\Test_Room_new</room>
+    <room>rooms\Level_One</room>
+    <room>rooms\Credit_Room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
